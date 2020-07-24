@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="logo.svg" width="101" height="84" alt="Седона">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav__wrapper">
+          <ul class="main-nav__list menu-list">
+            <li class="menu-list__item">
+              <a href="#">
+                Главная
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="photo.html">
+                Фото и видео
+              </a>
+            </li>
+            <li class="menu-list__item menu-list__item--active">
+              <a>
+                Форма отзыва
+              </a>
+            </li>
+            <li class="menu-list__item">
+              <a href="#">
+                HTML Academy
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="page-form">
+      <div class="main-picture">
+        <img class="main-picture__photo" src="https://via.placeholder.com/150x150" width="320" height="158" alt="Панорманый вид гор в Седоне">
+      </div>
+      <section class="page-form__questionary">
+        <header class="page-form__intro">
+          <h1 class="page-form__title">
+            Оставьте свой отзыв
+          </h1>
+          <p class="page-form__description">
+            Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях
+          </p>
+        </header>
+
+        <hr>
+
+        <form class="page-form__items information-details" action="https://echo.htmlacademy.ru" method="post">
+          <b class="information-details__request">Представьтесь:</b>
+          <p class="information-details__name">
+            Имя&#42;:
+            <input class="information-details__name-field" type="text" name="first-name" placeholder="Петр" required>
+          </p>
+          <p class="information-details__name">
+            Фамилия&#42;:
+            <input class="information-details__name-field" type="text" name="surname" placeholder="Иванов" required>
+          </p>
+          <p class="information-details__name">
+            Отчество:
+            <input class="information-details__name-field" type="text" name="father-name" placeholder="Александрович">
+          </p>
+
+          <hr>
+
+          <b class="information-details__request">Контактная информация:</b>
+          <p class="information-details__contact-info">
+            Контактный телефон&#42;:
+            <input class="information-details__contact-field" type="tel" name="phone-number" placeholder="Введите телефон" pattern="[0-9]{11}" required>
+          </p>
+          <p class="information-details__contact-info">
+            Электронная почта&#42;:
+            <input class="information-details__contact-field" type="email" name="email-address" placeholder="Введите e-mail" required>
+          </p>
+
+          <hr>
+
+          <b class="information-details__request">Ваше общее впечатление:</b>
+          <p class="information-details__impression">
+            <input class="information-details__impression-field" type="radio" name="review" value="positive" checked>
+            Скорее положительное
+          </p>
+          <p class="information-details__impression">
+            <input class="information-details__impression-field" type="radio" name="review" value="negative">
+            Скорее отрицательное
+          </p>
+          <p class="information-details__impression">
+            <input class="information-details__impression-field" type="radio" name="review" value="neutral">
+            Затрудняюсь ответить
+          </p>
+
+          <hr>
+
+          <b class="information-details__request">Посещенные достопримечательности:</b>
+          <p class="information-details__sights">
+            <input class="information-details__sights-field" type="checkbox" name="bridge" checked>
+            Мост Дьявола
+          </p>
+          <p class="information-details__sights">
+            <input class="information-details__sights-field" type="checkbox" name="mountain" checked>
+            Гора Колокол
+          </p>
+          <p class="information-details__sights">
+            <input class="information-details__sights-field" type="checkbox" name="park" checked>
+            Слайд-парк
+          </p>
+          <p class="information-details__sights">
+            <input class="information-details__sights-field" type="checkbox" name="cliffs">
+            Красные скалы
+          </p>
+
+          <hr>
+
+          <b class="information-details__request">Опишите свои эмоции:</b>
+          <p class="information-details__comment">
+            <textarea class="information-details__comment-field" name="comment" id="comment-field" rows="8">Опишите подробно все свои восторги</textarea>
+          </p>
+          <button class="button" type="submit">
+            Отправить отзыв
+          </button>
+        </form>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <b class="social__title">#visitsedona</b>
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="#">
+                Twitter
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--fb" href="#">
+                Facebook
+              </a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--youtube" href="#">
+                YouTube
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            HTML Academy
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
