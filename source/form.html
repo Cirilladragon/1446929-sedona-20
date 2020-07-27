@@ -6,17 +6,17 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="logo.svg" width="101" height="84" alt="Седона">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img src="logo.svg" width="101" height="84" alt="Седона">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a href="#">
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -42,7 +42,7 @@
 
     <main class="page-form">
       <div class="main-picture">
-        <img class="main-picture__photo" src="https://via.placeholder.com/150x150" width="320" height="158" alt="Панорманый вид гор в Седоне">
+        <img class="main-picture__content-title" src="sedona.svg" width="229" height="39" alt="Надпись 'Седона'">
       </div>
       <section class="page-form__questionary">
         <header class="page-form__intro">
@@ -54,72 +54,62 @@
           </p>
         </header>
 
-        <hr>
-
         <form class="page-form__items information-details" action="https://echo.htmlacademy.ru" method="post">
           <b class="information-details__request">Представьтесь:</b>
           <p class="information-details__name">
-            Имя&#42;:
-            <input class="information-details__name-field" type="text" name="first-name" placeholder="Петр" required>
+            <label for="first-name-field">Имя&#42;:</label>
+            <input class="information-details__name-field" type="text" id="first-name-field" name="first-name" placeholder="Петр" required>
           </p>
           <p class="information-details__name">
-            Фамилия&#42;:
-            <input class="information-details__name-field" type="text" name="surname" placeholder="Иванов" required>
+            <label for="surname-field">Фамилия&#42;:</label>
+            <input class="information-details__name-field" type="text" id="surname-field" name="surname" placeholder="Иванов" required>
           </p>
           <p class="information-details__name">
-            Отчество:
-            <input class="information-details__name-field" type="text" name="father-name" placeholder="Александрович">
+            <label for="father-name-field">Отчество:</label>
+            <input class="information-details__name-field" type="text" id="father-name-field" name="father-name" placeholder="Александрович">
           </p>
-
-          <hr>
 
           <b class="information-details__request">Контактная информация:</b>
           <p class="information-details__contact-info">
-            Контактный телефон&#42;:
-            <input class="information-details__contact-field" type="tel" name="phone-number" placeholder="Введите телефон" pattern="[0-9]{11}" required>
+            <label for="phone-field">Контактный телефон&#42;:</label>
+            <input class="information-details__contact-field" type="tel" id="phone-field" name="phone-number" placeholder="Введите телефон" pattern="[0-9]{11}" required>
           </p>
           <p class="information-details__contact-info">
-            Электронная почта&#42;:
-            <input class="information-details__contact-field" type="email" name="email-address" placeholder="Введите e-mail" required>
+            <label for="email-field">Электронная почта&#42;:</label>
+            <input class="information-details__contact-field" type="email" id="email-field" name="email-address" placeholder="Введите e-mail" required>
           </p>
-
-          <hr>
 
           <b class="information-details__request">Ваше общее впечатление:</b>
           <p class="information-details__impression">
-            <input class="information-details__impression-field" type="radio" name="review" value="positive" checked>
-            Скорее положительное
+            <input class="information-details__impression-field" type="radio" id="positive-field" name="review" value="positive" checked>
+            <label for="positive-field">Скорее положительное</label>
           </p>
           <p class="information-details__impression">
-            <input class="information-details__impression-field" type="radio" name="review" value="negative">
-            Скорее отрицательное
+            <input class="information-details__impression-field" type="radio" id="negative-field" name="review" value="negative">
+            <label for="negative-field">Скорее отрицательное</label>
           </p>
           <p class="information-details__impression">
-            <input class="information-details__impression-field" type="radio" name="review" value="neutral">
-            Затрудняюсь ответить
+            <input class="information-details__impression-field" type="radio" id="neutral-field" name="review" value="neutral">
+            <label for="neutral-field">Затрудняюсь ответить</label>
           </p>
-
-          <hr>
 
           <b class="information-details__request">Посещенные достопримечательности:</b>
           <p class="information-details__sights">
-            <input class="information-details__sights-field" type="checkbox" name="bridge" checked>
-            Мост Дьявола
+            <input class="information-details__sights-field" type="checkbox" id="bridge-field" name="bridge" checked>
+            <label for="bridge-field">Мост Дьявола</label>
           </p>
           <p class="information-details__sights">
-            <input class="information-details__sights-field" type="checkbox" name="mountain" checked>
-            Гора Колокол
+            <input class="information-details__sights-field" type="checkbox" id="mountain-field" name="mountain" checked>
+            <label for="mountain-field">Гора Колокол</label>
           </p>
           <p class="information-details__sights">
-            <input class="information-details__sights-field" type="checkbox" name="park" checked>
-            Слайд-парк
+            <input class="information-details__sights-field" type="checkbox" id="park-field" name="park" checked>
+            <label for="park-field">Слайд-парк</label>
           </p>
           <p class="information-details__sights">
-            <input class="information-details__sights-field" type="checkbox" name="cliffs">
-            Красные скалы
+            <input class="information-details__sights-field" type="checkbox" id="cliff-field" name="cliffs">
+            <label for="cliff-field">Красные скалы</label>
           </p>
-
-          <hr>
 
           <b class="information-details__request">Опишите свои эмоции:</b>
           <p class="information-details__comment">

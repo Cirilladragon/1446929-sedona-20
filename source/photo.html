@@ -6,17 +6,17 @@
   </head>
   <body class="page__body">
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img src="logo.svg" width="101" height="84" alt="Седона">
-      </a>
       <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">
+          <img src="logo.svg" width="101" height="84" alt="Седона">
+        </a>
         <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a href="#">
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -42,81 +42,104 @@
 
     <main class="page-photo">
       <div class="main-picture">
-        <img class="main-picture__photo" src="https://via.placeholder.com/150x150" width="320" height="158" alt="Панорманый вид гор в Седоне">
+        <img class="main-picture__content-title" src="sedona.svg" width="229" height="39" alt="Надпись 'Седона'">
       </div>
       <h1 class="page-photo__title">Фото и видео</h1>
       <p class="page-photo__intro">
         Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.
       </p>
-      <div class="page-photo__wrapper">
-        <figure class="page-photo__card">
+
+      <article class="photo">
+        <h2 class="visually-hidden">
+          Карточка 1
+        </h2>
+        <figure class="photo__card">
           <a href="#">
-            <img class="page-photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото дороги на фоне гор">
+            <img class="photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото дороги на фоне гор">
           </a>
-          <figcaption class="page-photo__card-legend">
+          <figcaption class="photo__card-legend">
             Неродные просторы
           </figcaption>
         </figure>
-        <footer class="page-photo__source details">
+        <footer class="photo__source details">
           <p class="details__author">
             Автор фото: Борис
           </p>
           <p class="details__likes details__likes--icon">
+          <button type="button"></button>
             1350
           </p>
         </footer>
+      </article>
 
-        <figure class="page-photo__card">
+      <article class="photo">
+        <h2 class="visually-hidden">
+          Карточка 2
+        </h2>
+        <figure class="photo__card">
           <a href="#">
-            <img class="page-photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото цветущего кактуса">
+            <img class="photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото цветущего кактуса">
           </a>
-          <figcaption class="page-photo__card-legend">
+          <figcaption class="photo__card-legend">
             Местная растительность
           </figcaption>
         </figure>
-        <footer class="page-photo__source details">
+        <footer class="photo__source details">
           <p class="details__author">
             Автор фото: Сергей
           </p>
           <p class="details__likes details__likes--icon">
+          <button type="button"></button>
             143
           </p>
         </footer>
+      </article>
 
-        <figure class="page-photo__card">
+      <article class="photo">
+        <h2 class="visually-hidden">
+          Карточка 3
+        </h2>
+        <figure class="photo__card">
           <a href="#">
-            <img class="page-photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото дороги через лес">
+            <img class="photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото дороги через лес">
           </a>
-          <figcaption class="page-photo__card-legend">
+          <figcaption class="photo__card-legend">
             Дорога на север
           </figcaption>
         </figure>
-        <footer class="page-photo__source details">
+        <footer class="photo__source details">
           <p class="details__author">
             Автор фото: Петр
           </p>
           <p class="details__likes details__likes--icon">
+          <button type="button"></button>
             96
           </p>
         </footer>
+      </article>
 
-        <figure class="page-photo__card">
+      <article class="photo">
+        <h2 class="visually-hidden">
+          Карточка 4
+        </h2>
+        <figure class="photo__card">
           <a href="#">
-            <img class="page-photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото каменного моста">
+            <img class="photo__picture" src="https://via.placeholder.com/150x150" width="280" height="280" alt="Фото каменного моста">
           </a>
-          <figcaption class="page-photo__card-legend">
+          <figcaption class="photo__card-legend">
             Мост дьявола
           </figcaption>
         </figure>
-        <footer class="page-photo__source details">
+        <footer class="photo__source details">
           <p class="details__author">
             Автор фото: Антон
           </p>
           <p class="details__likes details__likes--icon">
+          <button type="button"></button>
             254
           </p>
         </footer>
-      </div>
+      </article>
     </main>
 
     <footer class="page-footer">
