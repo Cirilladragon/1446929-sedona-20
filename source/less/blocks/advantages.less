@@ -1,0 +1,47 @@
+.advantages {
+	background-color: @white;
+
+	&__header {
+		outline: 2px solid rgba(255, 0, 0, 0.8);
+		outline-offset: -3px;
+	}
+
+	&__slogan {
+		font-weight: bold;
+		font-size: 18px;
+		line-height: 26px;
+	}
+
+	&__intro {
+		color: @darkgrey;
+	}
+
+	&__list {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	&__item {
+		outline: 2px solid rgba(255, 50, 150, 0.8);
+		outline-offset: -3px;
+		background-color: @lightblue;
+		.set-color(@lightblue);
+	}
+
+	&__item--lightgrey {
+		background-color: @lightgrey;
+		color: @black;
+	}
+
+	&__title {
+		line-height: 26px;
+		font-size: 18px;
+	}
+
+	&__number--darkgrey,
+	&__description--darkgrey {
+		color: @darkgrey;
+		line-height: 21px;
+	}
+}
