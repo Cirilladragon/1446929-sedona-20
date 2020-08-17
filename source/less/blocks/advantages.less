@@ -1,0 +1,46 @@
+.advantages {
+	background-color: @white;
+}
+
+.advantages__header {
+	outline: 2px solid rgba(255, 0, 0, 0.8);
+	outline-offset: -3px;
+}
+
+.advantages__slogan {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 26px;
+}
+
+.advantages__intro {
+	color: @darkgrey;
+}
+
+.advantages__list {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.advantages__item {
+	outline: 2px solid rgba(255, 50, 150, 0.8);
+	outline-offset: -3px;
+	background-color: @lightblue;
+	.set-color(@lightblue);
+
+	&--lightgrey {
+		background-color: @lightgrey;
+		color: @black;
+	}
+}
+.advantages__title {
+	line-height: 26px;
+	font-size: 18px;
+}
+
+.advantages__number--darkgrey,
+.advantages__description--darkgrey {
+	color: @darkgrey;
+	line-height: 21px;
+}
