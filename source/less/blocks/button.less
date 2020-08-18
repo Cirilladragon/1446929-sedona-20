@@ -1,0 +1,32 @@
+.button {
+	display: inline-block;
+	background-color: @grey;
+	font-family: "PT Sans", "Arial", sans-serif;
+	font-size: 21px;
+	font-weight: bold;
+
+	&--search {
+		background-color: @lightblue;
+		.set-color(@lightblue);
+		text-decoration: none;
+		padding: 14px 32px 17px;
+		line-height: 26px;
+	}
+
+	&--media {
+		background-color: @grey;
+		width: 280px;
+		height: 66px;
+	}
+
+	&--send {
+		background-color: @lightblue;
+		.set-color(@lightblue);
+		text-transform: uppercase;
+		padding-left: 32px;
+		padding-top: 18px;
+		padding-bottom: 13px;
+		padding-right: 33px;
+		border: none;
+	}
+}
